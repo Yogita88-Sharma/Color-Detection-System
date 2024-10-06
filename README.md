@@ -1,9 +1,36 @@
 # Color-Detection-System
 The Color Detection App is a Python-based tool that uses OpenCV, Pandas, and Tkinter to identify and display the closest color match for any clicked pixel on an image using a CSV-based color dataset. It offers an interactive GUI for easy image and color detection functionality.
-The application uses OpenCV to process the image and detect pixel colors, Pandas to handle the color dataset, and Tkinter to create a user-friendly graphical interface. The color matching is performed using a CSV file that contains color names along with their RGB values, which the user can load into the app.
+# Color Detection App
 
-Key Features:
-CSV-Based Color Matching: The app compares the clicked pixel’s color with a dataset of colors and displays the closest match.
-Responsive Image Resizing: Automatically resizes the image for display in the app window while preserving accurate color detection from the original image dimensions.
-Interactive GUI: Users can easily upload images, load color datasets, and click on the image to detect colors.
-This tool is ideal for tasks requiring accurate color identification, whether for design, art, or coding projects that involve color selection.
+This is a Python-based **Color Detection Tool** that allows users to upload an image, click on any pixel within the image, and get information about the closest color match from a predefined CSV file containing RGB values and color names.
+
+## Features
+- **Image Upload**: Upload any image file (JPG, PNG) using a GUI built with Tkinter.
+- **Color Detection**: Click on any pixel in the image, and the app will display the color name and RGB values.
+- **CSV-Based Color Matching**: The tool matches the clicked pixel's color to the closest predefined color in the CSV file (`color_srgb.csv`).
+- **Responsive Design**: Automatically resizes the image for the app window, while maintaining the ability to detect the original pixel's color.
+
+## Demo
+Here's how the application looks and functions:
+- Upload an image:
+  - Click on any part of the image to detect its color.
+  - View the color name and its corresponding RGB values.
+
+## Technologies Used
+- **Python**: Core language for the project.
+- **OpenCV**: For image loading, processing, and color detection.
+- **Pandas**: To load and parse the CSV file containing color data.
+- **Tkinter**: To build the graphical user interface (GUI).
+- **Pillow**: For converting images to a format suitable for Tkinter.
+
+## Installation
+
+### Prerequisites
+Ensure you have Python 3.x installed. You can download it from [Python's official site](https://www.python.org/).
+
+### 1. Clone the Repository
+You can clone this project by running the following command in your terminal or command prompt:
+
+```bash
+git clone https://github.com/Yogita88-Sharma/Color-Detection-System.git
+
